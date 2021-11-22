@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #4158D0;
+	background: -webkit-linear-gradient(to right, #4158D0,#C850C0,#FFCC70);
+	background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+}
+
+.title {
+	max-width: 60%;
+	max-height: 180px;
+	margin-bottom: 15px;
+}
+
+.poke-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.pokemon {
+	border: solid 2px black;
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+.pokemon:hover {
+	animation: bounce 0.5s linear;
+  }
+  @keyframes bounce {
+	20% {
+	  transform: translateY(-10px);
+	}
+	40% {
+	  transform: translateY(0px);
+	}
+	60% {
+	  transform: translateY(-5px);
+	}
+	80% {
+	  transform: translateY(-0px);
+	}
+  }
+
+.pokemon .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+}
+
+.pokemon .img-container img {
+	margin-top: 20px;
+	width: 95px;
+}
+
+.pokemon .info {
+	margin-top: 20px;
+}
+
+.pokemon .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	font-size: 0.8em;
+	padding: 3px 8px;
+}
+
+.pokemon .name {
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+.type{
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 5px 10px;
+}
+
+
+
+
+
+
